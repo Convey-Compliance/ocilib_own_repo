@@ -1,0 +1,6 @@
+/Debug/
+/Win32/
+*.opensdf
+*.sdf
+*.vcxproj.user
+/Win64/

@@ -131,6 +131,8 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release ANSI|x64'">ocilib_demo</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release UNICODE|x64'">ocilib_demo</TargetName>
     <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release ANSI|x64'">$(ExecutablePath)</ExecutablePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug ANSI|Win32'">..\..\lib32;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug ANSI|Win32'">..\..\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release ANSI|Win32'">
     <Midl>
