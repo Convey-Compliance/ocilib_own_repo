@@ -1,0 +1,10 @@
+/Debug/
+/ipch/
+/temp/
+/x64/
+*.opensdf
+*.vcxproj.user
+*.sdf
+/Release (64bits) - ANSI/
+*.v12.suo
+*.suo

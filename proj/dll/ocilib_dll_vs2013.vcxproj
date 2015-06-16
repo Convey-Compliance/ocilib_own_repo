@@ -231,24 +231,60 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|x64'">false</GenerateManifest>
     <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|x64'">false</EmbedManifest>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|Win32'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|Win32'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|Win32'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|Win32'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|x64'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|x64'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|x64'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|x64'">..\..\include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|Win32'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|Win32'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|Win32'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|Win32'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|x64'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|x64'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|x64'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|x64'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|Win32'">ociliba</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|x64'">ociliba</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|Win32'">ocilibm</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|x64'">ocilibm</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|Win32'">ocilibw</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|x64'">ocilibw</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\include;..\..\__submodules\oracle_oci\windows\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|x64'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|x64'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|x64'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|x64'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - ANSI|Win32'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC_32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - UNICODE|Win32'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC_32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC_32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC_32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (64bits) - ANSI|Win32'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC_32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - MIXED|Win32'">
+    <LibraryPath>..\..\__submodules\oracle_oci\windows\MSVC_32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

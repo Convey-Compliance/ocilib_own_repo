@@ -4,3 +4,4 @@
 *.sdf
 *.vcxproj.user
 /Win64/
+*.suo

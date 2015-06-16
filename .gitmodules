@@ -1,0 +1,3 @@
+[submodule "__submodules/oracle_oci"]
+	path = __submodules/oracle_oci
+	url = git@github.com:Convey-Compliance/oracle_oci.git
